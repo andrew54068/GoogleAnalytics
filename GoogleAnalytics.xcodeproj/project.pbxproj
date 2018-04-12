@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E6E3791F33AE68FE64B51FF /* Pods_GoogleAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B88FAE2347D1CA5FE174DC /* Pods_GoogleAnalytics.framework */; };
 		6DB3B270207CC14B00DA5EC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB3B26F207CC14B00DA5EC0 /* AppDelegate.swift */; };
 		6DB3B272207CC14B00DA5EC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB3B271207CC14B00DA5EC0 /* ViewController.swift */; };
 		6DB3B275207CC14B00DA5EC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB3B273207CC14B00DA5EC0 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22B88FAE2347D1CA5FE174DC /* Pods_GoogleAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB3B26C207CC14B00DA5EC0 /* GoogleAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB3B26F207CC14B00DA5EC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DB3B271207CC14B00DA5EC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,9 @@
 		6DB3B276207CC14E00DA5EC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DB3B279207CC14E00DA5EC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DB3B27B207CC14E00DA5EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB3B282207CC90900DA5EC0 /* GoogleAnalytics_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleAnalytics_Bridging_Header.h; sourceTree = "<group>"; };
+		7481100195B6DE44F4F67815 /* Pods-GoogleAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAnalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleAnalytics/Pods-GoogleAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
+		F677C04EE9B36C5205F9B861 /* Pods-GoogleAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAnalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleAnalytics/Pods-GoogleAnalytics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6E3791F33AE68FE64B51FF /* Pods_GoogleAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13376586BCCD77BE614E7263 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7481100195B6DE44F4F67815 /* Pods-GoogleAnalytics.debug.xcconfig */,
+				F677C04EE9B36C5205F9B861 /* Pods-GoogleAnalytics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6DB3B263207CC14B00DA5EC0 = {
 			isa = PBXGroup;
 			children = (
 				6DB3B26E207CC14B00DA5EC0 /* GoogleAnalytics */,
 				6DB3B26D207CC14B00DA5EC0 /* Products */,
+				13376586BCCD77BE614E7263 /* Pods */,
+				8053C0B614D9BD0D8F980172 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +74,20 @@
 				6DB3B26F207CC14B00DA5EC0 /* AppDelegate.swift */,
 				6DB3B271207CC14B00DA5EC0 /* ViewController.swift */,
 				6DB3B273207CC14B00DA5EC0 /* Main.storyboard */,
+				6DB3B282207CC90900DA5EC0 /* GoogleAnalytics_Bridging_Header.h */,
 				6DB3B276207CC14E00DA5EC0 /* Assets.xcassets */,
 				6DB3B278207CC14E00DA5EC0 /* LaunchScreen.storyboard */,
 				6DB3B27B207CC14E00DA5EC0 /* Info.plist */,
 			);
 			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		8053C0B614D9BD0D8F980172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22B88FAE2347D1CA5FE174DC /* Pods_GoogleAnalytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DB3B27E207CC14E00DA5EC0 /* Build configuration list for PBXNativeTarget "GoogleAnalytics" */;
 			buildPhases = (
+				1FF9D0F2AA0E4E82D98E4A17 /* [CP] Check Pods Manifest.lock */,
 				6DB3B268207CC14B00DA5EC0 /* Sources */,
 				6DB3B269207CC14B00DA5EC0 /* Frameworks */,
 				6DB3B26A207CC14B00DA5EC0 /* Resources */,
+				4EA0C951D8F9A62CD1D19585 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +157,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FF9D0F2AA0E4E82D98E4A17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAnalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EA0C951D8F9A62CD1D19585 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleAnalytics/Pods-GoogleAnalytics-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleAnalytics/Pods-GoogleAnalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DB3B268207CC14B00DA5EC0 /* Sources */ = {
@@ -278,17 +345,19 @@
 		};
 		6DB3B27F207CC14E00DA5EC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7481100195B6DE44F4F67815 /* Pods-GoogleAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2KP5DU4HL;
 				INFOPLIST_FILE = GoogleAnalytics/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.25sprout.GoogleAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = GoogleAnalytics/GoogleAnalytics_Bridging_Header.h;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,17 +365,21 @@
 		};
 		6DB3B280207CC14E00DA5EC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F677C04EE9B36C5205F9B861 /* Pods-GoogleAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2KP5DU4HL;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = GoogleAnalytics/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.25sprout.GoogleAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = GoogleAnalytics/GoogleAnalytics_Bridging_Header.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
